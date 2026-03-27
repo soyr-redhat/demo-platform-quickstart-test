@@ -1,0 +1,71 @@
+---
+layout: default
+title: Quickstart 1 - Chat with an LLM (AsciiDoc)
+---
+
+<div class="format-toggle">
+  <a href="quickstart-1-chat-llm.html" class="format-btn">📄 Markdown</a>
+  <a href="quickstart-1-chat-llm-adoc.html" class="format-btn active">📋 AsciiDoc</a>
+</div>
+
+<div id="asciidoc-content"></div>
+
+<script>
+  // Fetch pre-rendered AsciiDoc HTML (built by GitHub Actions)
+  fetch('quickstart-1-chat-llm-asciidoc.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('AsciiDoc HTML not found');
+      }
+      return response.text();
+    })
+    .then(html => {
+      // Extract body content (remove the full HTML wrapper if present)
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const content = doc.body ? doc.body.innerHTML : html;
+      document.getElementById('asciidoc-content').innerHTML = content;
+    })
+    .catch(error => {
+      console.error('Error loading AsciiDoc:', error);
+      document.getElementById('asciidoc-content').innerHTML =
+        '<div class="alert alert-warning"><strong>Error:</strong> AsciiDoc version not yet built. Please wait for GitHub Actions to complete the build.</div>';
+    });
+</script>
+
+<style>
+  /* Additional AsciiDoc-specific styling */
+  #asciidoc-content .sect1 > h2 {
+    border-bottom: 2px solid var(--rh-red);
+    padding-bottom: 0.5em;
+  }
+
+  #asciidoc-content .admonitionblock {
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    border-left: 4px solid;
+    border-radius: 4px;
+  }
+
+  #asciidoc-content .admonitionblock.tip {
+    border-left-color: #3e8635;
+    background-color: #f0f8f0;
+  }
+
+  #asciidoc-content .admonitionblock.important {
+    border-left-color: #CC0000;
+    background-color: #fdf7e5;
+  }
+
+  #asciidoc-content .admonitionblock td.icon {
+    font-weight: bold;
+    color: #CC0000;
+  }
+
+  #asciidoc-content .listingblock pre {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    border-left: 4px solid #CC0000;
+  }
+</style>

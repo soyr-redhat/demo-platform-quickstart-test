@@ -1,0 +1,78 @@
+# Jekyll Configuration for Prelude Quickstarts
+# Based on Red Hat theme styling
+
+# Site settings
+title: Prelude OpenShift AI Quickstarts
+description: Comprehensive guides for getting started with AI/ML workloads on Red Hat OpenShift AI
+baseurl: "" # Leave empty for root deployment or set to /demo-platform-quickstart-test
+url: "" # Will be set by GitHub Pages
+
+# Theme
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 1..3
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO
+twitter:
+  username: RedHat
+  card: summary
+
+author:
+  name: Red Hat OpenShift AI
+  twitter: RedHat
+
+social:
+  name: Red Hat OpenShift AI
+  links:
+    - https://github.com/eformat
+
+# Collections
+collections:
+  quickstarts:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Red Hat OpenShift AI"
+  - scope:
+      path: ""
+      type: "quickstarts"
+    values:
+      layout: "quickstart"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - "*.adoc"  # Process AsciiDoc separately if needed
+
+# GitHub Pages
+github:
+  repository_url: https://github.com/eformat/demo-platform-quickstart-test
+
+# Custom variables
+prelude:
+  primary_color: "#CC0000"
+  secondary_color: "#0066cc"
+  font_family: "'RedHatText', 'Overpass', 'Open Sans', Helvetica, Arial, sans-serif"
