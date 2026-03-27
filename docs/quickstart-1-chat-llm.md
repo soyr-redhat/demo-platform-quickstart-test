@@ -1,15 +1,15 @@
 # Quickstart 1: Chat with an LLM
 
-<span class="badge">⏱️ Duration: 5 minutes</span>
-<span class="badge">📚 Topics: Getting started, Agents, Notebook environments</span>
+<span class="badge">Duration: 5 minutes</span>
+<span class="badge">Topics: Getting started, Agents, Notebook environments</span>
 
 ---
 
 <!-- tabs:start -->
 
-#### **📄 Markdown**
+#### **Markdown**
 
-## 🎯 Introduction
+## Introduction
 
 ### Experience 1: Chat with an LLM
 
@@ -21,32 +21,32 @@ Large Language Models (LLMs) are AI systems trained to understand and generate t
 
 You'll be chatting with multiple models. Some hosted, some available on the [Red Hat AI Hugging Face Repo](https://red.ht/rhai-hf). These models offer:
 
-- 🖼️ **Multimodal capabilities** - you can even upload images and chat with them
-- 🛠️ **Tool calling access** for building AI agents (explored in later experiences)
-- 🔄 **Multiple models** to choose from, each with different strengths
+- **Multimodal capabilities** - you can even upload images and chat with them
+- **Tool calling access** for building AI agents (explored in later experiences)
+- **Multiple models** to choose from, each with different strengths
 
 #### What will be accomplished:
 
-- ✅ Access the chat interface (OpenWebUI)
-- ✅ Chat with an open source LLM running locally
-- ✅ Explore different available models
+- Access the chat interface (OpenWebUI)
+- Chat with an open source LLM running locally
+- Explore different available models
 
 #### Why this matters:
 
-- ⚡ Many models on our list are optimized with accurate quantization - more efficient and faster while recovering to the same accuracy
-- 🔒 All models are being hosted locally - data never leaves your environment
-- 🔧 Want to compress your own model? Check out the [LLM Compressor](https://red.ht/llm-compressor) on GitHub!
-- 🎨 Free to experiment and discover what these models can do, for example, activate multiple models simultaneously to compare and contrast
+- Many models on our list are optimized with accurate quantization - more efficient and faster while recovering to the same accuracy
+- All models are being hosted locally - data never leaves your environment
+- Want to compress your own model? Check out the [LLM Compressor](https://red.ht/llm-compressor) on GitHub!
+- Free to experiment and discover what these models can do, for example, activate multiple models simultaneously to compare and contrast
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
-?> **Before you begin:** You will need your **admin password** to login to the chat application.
+> **Before you begin:** You will need your **admin password** to login to the chat application.
 
 ---
 
-## 📖 Tasks
+## Tasks
 
 ### Task 1: Access and Chat with the LLM
 
@@ -90,20 +90,20 @@ Once logged in, you should now be in OpenWebUI and be able to chat with the defa
 
 ---
 
-### ✔️ Verification
+### Verification
 
 <div class="alert alert-info">
   <strong>Check Your Progress</strong>
   <p><strong>Question:</strong> Did you get logged into OpenWebUI OK and chat with the LLM?</p>
   <ul>
-    <li>✅ <strong>Success:</strong> You have completed this task and can interact with the LLM.</li>
-    <li>⚠️ <strong>Failed:</strong> This task isn't verified yet. Try the task again.</li>
+    <li><strong>Success:</strong> You have completed this task and can interact with the LLM.</li>
+    <li><strong>Failed:</strong> This task isn't verified yet. Try the task again.</li>
   </ul>
 </div>
 
 ---
 
-## 🎉 Conclusion
+## Conclusion
 
 **Congratulations!** You successfully completed the **Chatting with an LLM** quickstart.
 
@@ -118,7 +118,7 @@ You've learned how to:
 
 ---
 
-## 🔗 Additional Resources
+## Additional Resources
 
 - [Red Hat OpenShift AI Documentation](https://access.redhat.com/documentation/en-us/red_hat_openshift_ai_self-managed)
 - [Red Hat AI Hugging Face Repository](https://red.ht/rhai-hf)
@@ -126,7 +126,7 @@ You've learned how to:
 
 ---
 
-#### **📋 AsciiDoc**
+#### **AsciiDoc**
 
 ```asciidoc
 = Quickstart 1: Chat with an LLM
@@ -156,14 +156,12 @@ OpenShift environment*. No external APIs, no data leaving your cluster.
 You'll be chatting with multiple models. Some hosted, some available on the
 https://red.ht/rhai-hf[Red Hat AI Hugging Face Repo^]. These models offer:
 
-[%hardbreaks]
-🖼️ *Multimodal capabilities* - you can even upload images and chat with them +
-🛠️ *Tool calling access* for building AI agents (explored in later experiences) +
-🔄 *Multiple models* to choose from, each with different strengths
+* *Multimodal capabilities* - you can even upload images and chat with them
+* *Tool calling access* for building AI agents (explored in later experiences)
+* *Multiple models* to choose from, each with different strengths
 
 ==== What will be accomplished:
 
-[checklist]
 * Access the chat interface (OpenWebUI)
 * Chat with an open source LLM running locally
 * Explore different available models
@@ -172,11 +170,10 @@ https://red.ht/rhai-hf[Red Hat AI Hugging Face Repo^]. These models offer:
 
 TIP: Many models on our list are optimized with accurate quantization - more efficient and faster
 
-[%hardbreaks]
-⚡ Many models are optimized with accurate quantization - more efficient and faster +
-🔒 All models are hosted locally - data never leaves your environment +
-🔧 Want to compress your own model? Check out the https://red.ht/llm-compressor[LLM Compressor^] +
-🎨 Free to experiment - activate multiple models simultaneously to compare and contrast
+* Many models are optimized with accurate quantization - more efficient and faster
+* All models are hosted locally - data never leaves your environment
+* Want to compress your own model? Check out the https://red.ht/llm-compressor[LLM Compressor^]
+* Free to experiment - activate multiple models simultaneously to compare and contrast
 
 '''
 
@@ -236,25 +233,20 @@ the default model selected
 
 === Verification
 
-[.verification-box]
-****
 .Check Your Progress
 ====
 *Question:* Did you get logged into OpenWebUI OK and chat with the LLM?
 
-[%interactive]
-* [x] ✅ *Success:* You have completed this task
-* [ ] ⚠️ *Failed:* Try the task again
+* *Success:* You have completed this task
+* *Failed:* Try the task again
 ====
-****
 
 '''
 
 == Conclusion
 
-[.congratulations]
 ****
-🎉 *Congratulations!*
+*Congratulations!*
 
 You successfully completed the *Chatting with an LLM* quickstart.
 ****
