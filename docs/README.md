@@ -1,86 +1,41 @@
-# Prelude Quickstarts Documentation
+# Prelude OpenShift AI Quickstarts
 
-This directory contains the GitHub Pages documentation for Prelude OpenShift AI Quickstarts.
+> Comprehensive guides for getting started with AI/ML workloads on Red Hat OpenShift AI
 
-## Structure
+## 🎯 Available Quickstarts
 
-```
-docs/
-├── _config.yml           # Jekyll configuration
-├── index.md              # Homepage
-├── quickstart-1-chat-llm.md    # Markdown version
-├── quickstart-1-chat-llm.adoc  # AsciiDoc version
-└── assets/
-    └── css/
-        └── style.scss    # Custom styling
-```
+### [1️⃣ Chat with an LLM](quickstart-1-chat-llm.md)
+**Duration:** 5 minutes
 
-## Viewing Locally
+Learn how to access and interact with open source Large Language Models running locally in your OpenShift environment.
 
-To view the site locally:
+- Access the chat interface (OpenWebUI)
+- Chat with locally-hosted LLMs
+- Explore different AI models
 
-```bash
-# Install Jekyll
-gem install bundler jekyll
+[Get Started →](quickstart-1-chat-llm.md)
 
-# Create Gemfile
-cat > Gemfile << EOF
-source "https://rubygems.org"
-gem "github-pages", group: :jekyll_plugins
-gem "webrick"
-EOF
+---
 
-# Install dependencies
-bundle install
+## 📖 About
 
-# Serve locally
-bundle exec jekyll serve
+These quickstarts are designed for the **Prelude Red Hat OpenShift AI (RHOAI)** environment, providing hands-on experience with:
 
-# Open http://localhost:4000
-```
+- 🤖 Open source LLMs
+- 📊 AI/ML model deployment
+- 📓 Notebook environments
+- 🛠️ AI Agents and tool calling
 
-## Deployment
+All models run **locally within your OpenShift cluster** - no external APIs required.
 
-This site is automatically deployed via GitHub Pages when changes are pushed to the main branch.
+---
 
-Configure in repository settings:
-- Settings → Pages
-- Source: Deploy from a branch
-- Branch: main
-- Folder: /docs
+## 🔗 Resources
 
-## Formats
+- [Red Hat OpenShift AI Documentation](https://access.redhat.com/documentation/en-us/red_hat_openshift_ai_self-managed)
+- [Red Hat AI Hugging Face Repo](https://red.ht/rhai-hf)
+- [LLM Compressor on GitHub](https://red.ht/llm-compressor)
 
-### Markdown (.md)
-- Used for GitHub Pages with Jekyll
-- Supports front matter and custom themes
-- Good for web viewing
+---
 
-### AsciiDoc (.adoc)
-- More powerful than Markdown
-- Better for technical documentation
-- Can be converted to PDF, HTML, etc.
-
-## Converting AsciiDoc to Other Formats
-
-```bash
-# Install asciidoctor
-gem install asciidoctor
-
-# Convert to HTML
-asciidoctor quickstart-1-chat-llm.adoc
-
-# Convert to PDF (requires asciidoctor-pdf)
-gem install asciidoctor-pdf
-asciidoctor-pdf quickstart-1-chat-llm.adoc
-```
-
-## Customization
-
-Edit `_config.yml` to customize:
-- Site title and description
-- Theme
-- Plugins
-- Build settings
-
-Edit `assets/css/style.scss` for custom styling.
+?> **Tip:** Use the format toggle tabs on each quickstart page to switch between Markdown and AsciiDoc views!
