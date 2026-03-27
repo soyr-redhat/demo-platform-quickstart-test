@@ -35,8 +35,6 @@ author:
 
 social:
   name: Red Hat OpenShift AI
-  links:
-    - https://github.com/eformat
 
 # Collections
 collections:
@@ -66,10 +64,6 @@ exclude:
   - vendor
   - README.md
   - "*.adoc"  # Process AsciiDoc separately if needed
-
-# GitHub Pages
-github:
-  repository_url: https://github.com/eformat/demo-platform-quickstart-test
 
 # Custom variables
 prelude:
